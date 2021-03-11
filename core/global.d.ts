@@ -6,8 +6,6 @@
 
 type LuaThread = { readonly __internal__: unique symbol };
 type LuaUserdata = { readonly __internal__: unique symbol };
-/** @luaIterator */
-type LuaIterable<T> = Iterable<T> & { readonly __internal__: unique symbol };
 /** @luaIterator @tupleReturn */
 type LuaTupleIterable<T extends any[]> = Iterable<T> & { readonly __internal__: unique symbol };
 
